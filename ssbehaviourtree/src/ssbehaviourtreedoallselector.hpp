@@ -9,6 +9,9 @@
  * @author Sawyer Stanley (https://github.com/SawyersCoding)
  */
 
+#ifndef SSBEHAVIOURTREEDOALLSELECTOR_HPP
+#define SSBEHAVIOURTREEDOALLSELECTOR_HPP
+
 #include "ssabstractbehaviourtree.hpp"
 
 namespace ssutil::behaviourtree{
@@ -23,3 +26,5 @@ namespace ssutil::behaviourtree{
     };
 
 }
+
+#endif // SSBEHAVIOURTREEDOALLSELECTOR_HPP
