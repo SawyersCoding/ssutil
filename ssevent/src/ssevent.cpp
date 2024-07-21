@@ -1,18 +1,20 @@
 #include "ssevent.hpp"
 
-void ssutil::ssevent::add_callback(const std::function<void(void *)> callback)
+ssutil::ssevent::ssevent() { }
+
+void ssutil::ssevent::add_callback(std::function<void(void *)> callback)
 {
-    callbacks.emplace(callback);
+    callbacks.emplace(&callback);
 }
 
 void ssutil::ssevent::notify()
 {
-    for(const std::function<void(void*)> callback : callbacks){
-        callback(this);
+    for(std::function<void(void*)>* callback : callbacks){
+        (*callback)(this);
     }
 }
 
-void ssutil::ssevent::remove_callback(const std::function<void(void *)> callback)
+void ssutil::ssevent::remove_callback(std::function<void(void *)> callback)
 {
-    callbacks.erase(callback);
+    callbacks.erase(&callback);
 }
