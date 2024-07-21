@@ -15,11 +15,16 @@
 #define SSEVENT_HPP
 
 #include <functional>
+#include <unordered_set>
 #include "ssievent.hpp"
 
 namespace ssutil{
 
     class ssevent : public ssievent {
+
+        private:
+
+            std::unordered_set<const std::function<void(void*)>> callbacks;
 
         public:
 
