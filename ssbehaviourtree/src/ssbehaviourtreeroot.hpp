@@ -29,7 +29,7 @@ namespace ssutil::behaviourtree{
             virtual void append_child(abstractbehaviourtree *child) override;
             
             /// @brief Processes this tree.
-            /// @return The status of this tree (i.e. did the task fail, succeed, or is incomplete?).
+            /// @return The status of the subtree or SUCCESS if no subtree exists.
             status tick() override;
 
     };

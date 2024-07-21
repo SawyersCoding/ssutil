@@ -23,7 +23,7 @@ namespace ssutil::behaviourtree{
     status root::tick()
     {
         if(children.size() == NCHILDREN_MAX) return children[0]->tick();
-        return FAILURE;
+        return SUCCESS;
     }
 
 }
