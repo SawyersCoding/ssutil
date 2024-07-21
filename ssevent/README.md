@@ -2,11 +2,13 @@
 
 An implementation of the observer pattern inspired by C# events.
 
-Often, the observer pattern has subjects/events maintain a list of objects that implement an interface for observers/listeners. This can become cumbersome when a specific object must listen for several events or one wants to invoke a global function when an event occurs.
+Often, the observer pattern has subjects/events maintain a list of objects which implement an interface for observers/listeners. This can become cumbersome when a specific object must listen for several events or one wants to invoke a global function when an event occurs.
 
-These issues are remedied by ssevents by having ssevents maintain a set of functions to invoke instead a set of objects that implement the desired function. This way, any function with the appropriate prototype can be invoked by the ssevent. This was accomplished using the functional library.
+These issues are remedied by ssevents by having ssevents maintain a set of functions to invoke instead a set of objects that implement the desired function. This way, any function with the appropriate prototype can be invoked by the ssevent. This is accomplished using the functional library.
 
-The main drawback to this approach is that one must use the std::bind to subscribe a member function to an event. Thus, subscribing a member function is slightly different from subscribing a global function. See example.cpp:
+The main drawback to this approach is that one must use the std::bind to subscribe a member function to an event. Thus, subscribing a member function is slightly different from subscribing a global function. 
+
+## example.cpp:
 
 ```
 #include <iostream>
