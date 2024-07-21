@@ -11,10 +11,14 @@
 #ifndef SSIBEHTREESTATUS_HPP
 #define SSIBEHTREESTATUS_HPP
 
-enum ssbehtreestatus{
-    FAILURE = 0,
-    SUCCESS = 1,
-    RUNNING = 2
-};
+namespace ssutil{
+
+    enum ssbehtreestatus{
+        FAILURE = 0,
+        SUCCESS = 1,
+        RUNNING = 2
+    };
+    
+}
 
 #endif // SSIBEHTREESTATUS_HPP
