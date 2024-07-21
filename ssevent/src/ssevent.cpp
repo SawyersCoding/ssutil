@@ -6,8 +6,7 @@
  *
  * @namespace ssutil
  *
- * @author Sawyer Stanley
- * Contact: sawyerscoding@gmail.com
+ * @author Sawyer Stanley (https://github.com/SawyersCoding)
  */
 
 #include "ssevent.hpp"

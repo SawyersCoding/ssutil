@@ -7,8 +7,7 @@
  *
  * @namespace ssutil
  *
- * @author Sawyer Stanley
- * Contact: sawyerscoding@gmail.com
+ * @author Sawyer Stanley (https://github.com/SawyersCoding)
  */
 
 #ifndef SSIEVENT_HPP
