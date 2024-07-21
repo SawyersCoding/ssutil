@@ -9,7 +9,7 @@
  * @author Sawyer Stanley (https://github.com/SawyersCoding)
  */
 
-#include "ssbehviourtreesequence.hpp"
+#include "ssbehaviourtreesequence.hpp"
 
 namespace ssutil::behaviourtree{
 

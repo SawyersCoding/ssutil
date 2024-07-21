@@ -9,7 +9,7 @@
  * @author Sawyer Stanley (https://github.com/SawyersCoding)
  */
 
-#include "ssbehviourtreeselector.hpp"
+#include "ssbehaviourtreeselector.hpp"
 
 namespace ssutil::behaviourtree{
     status selector::tick()
