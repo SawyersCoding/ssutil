@@ -24,10 +24,10 @@ namespace ssutil{
 
         private:
 
-            std::unordered_set<std::function<void(void*)>*> callbacks;
+            std::unordered_set<std::function<void(void *)> *> callbacks;
 
         public:
-
+            /// @brief Creates an ssevent.
             ssevent();
 
         public:
@@ -35,7 +35,7 @@ namespace ssutil{
             /// @brief Adds the given callback from the set of callbacks to be invoked
             /// during notify().
             /// @param callback The callback to add.
-            void add_callback(std::function<void(void*)> callback) override;
+            void add_callback(std::function<void(void *)> *callback) override;
 
             /// @brief Invokes all callbacks.
             void notify() override;
@@ -43,7 +43,19 @@ namespace ssutil{
             /// @brief Removes the given callback from the set of callbacks to be invoked
             /// during notify().
             /// @param callback The callback to remove.
-            void remove_callback(std::function<void(void*)> callback) override;
+            void remove_callback(std::function<void(void *)> *callback) override;
+
+            // ----- OPERATORS
+
+            /// @brief Adds the given callback from the set of callbacks to be invoked
+            /// during notify().
+            /// @param callback The callback to add.
+            void operator+=(std::function<void(void *)> *callback) override;
+
+            /// @brief Removes the given callback from the set of callbacks to be invoked
+            /// during notify().
+            /// @param callback The callback to remove.
+            void operator-=(std::function<void(void *)> *callback) override;
 
     };
 

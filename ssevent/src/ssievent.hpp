@@ -25,7 +25,7 @@ namespace ssutil{
             /// @brief Adds the given callback from the set of callbacks to be invoked
             /// during notify().
             /// @param callback The callback to add.
-            virtual void add_callback(const std::function<void(void*)> callback) = 0;
+            virtual void add_callback(std::function<void(void *)> *callback) = 0;
 
             /// @brief Invokes all callbacks.
             virtual void notify() = 0;
@@ -33,7 +33,19 @@ namespace ssutil{
             /// @brief Removes the given callback from the set of callbacks to be invoked
             /// during notify().
             /// @param callback The callback to remove.
-            virtual void remove_callback(const std::function<void(void*)> callback) = 0;
+            virtual void remove_callback(std::function<void(void *)> *callback) = 0;
+
+            // ----- OPERATORS
+
+            /// @brief Adds the given callback from the set of callbacks to be invoked
+            /// during notify().
+            /// @param callback The callback to add.
+            virtual void operator+=(std::function<void(void *)> *callback) = 0;
+
+            /// @brief Removes the given callback from the set of callbacks to be invoked
+            /// during notify().
+            /// @param callback The callback to remove.
+            virtual void operator-=(std::function<void(void *)> *callback) = 0;
 
     };
 
