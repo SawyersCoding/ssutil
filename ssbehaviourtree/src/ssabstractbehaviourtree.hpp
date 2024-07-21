@@ -14,28 +14,28 @@
 #include <vector>
 #include "ssbehaviourtreestatus.hpp"
 
-namespace ssutil{
+namespace ssutil::behaviourtree{
     
-    class ssabstractbehaviourtree{
+    class abstractbehaviourtree{
 
         protected:
-            std::vector<ssabstractbehaviourtree *> children;
+            std::vector<abstractbehaviourtree *> children;
 
         public:
 
             /// @brief Appends a behaviour tree to the end this tree's children.
             /// @param child The tree to append.
-            virtual void append_child(ssabstractbehaviourtree *child);
+            virtual void append_child(abstractbehaviourtree *child);
 
             /// @brief Processes this tree.
             /// @return The status of this tree (i.e. did the task fail, succeed, or is incomplete?).
-            virtual ssbehaviourtreestatus tick() = 0;
+            virtual status tick() = 0;
 
             // ----- OPERATORS     
 
             /// @brief Appends a behaviour tree to the end this tree's children.
             /// @param child The tree to append.
-            void operator+=(ssabstractbehaviourtree *child);
+            void operator+=(abstractbehaviourtree *child);
     };
 
 }

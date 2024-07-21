@@ -1,5 +1,5 @@
 /**
- * @file ssabstractbehaviourtree.chpp
+ * @file ssabstractbehaviourtree.cpp
  *
  * @brief A base abstract class for all behaviour trees.
  *
@@ -10,14 +10,14 @@
 
 #include "ssabstractbehaviourtree.hpp"
 
-namespace ssutil{
+namespace ssutil::behaviourtree{
 
-    void ssabstractbehaviourtree::append_child(ssabstractbehaviourtree *child)
+    void abstractbehaviourtree::append_child(abstractbehaviourtree *child)
     {
         children.push_back(child);
     }
 
-    void ssabstractbehaviourtree::operator+=(ssabstractbehaviourtree *child)
+    void abstractbehaviourtree::operator+=(abstractbehaviourtree *child)
     {
         append_child(child);
     }

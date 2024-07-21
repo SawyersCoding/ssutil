@@ -8,12 +8,12 @@
  * @author Sawyer Stanley (https://github.com/SawyersCoding)
  */
 
-#ifndef SSIBEHTREESTATUS_HPP
-#define SSIBEHTREESTATUS_HPP
+#ifndef SSBEHAVIOURTREESTATUS_HPP
+#define SSBEHAVIOURTREESTATUS_HPP
 
-namespace ssutil{
+namespace ssutil::behaviourtree {
 
-    enum ssbehaviourtreestatus{
+    enum status{
         FAILURE = 0,
         SUCCESS = 1,
         RUNNING = 2
@@ -21,4 +21,4 @@ namespace ssutil{
 
 }
 
-#endif // SSIBEHTREESTATUS_HPP
+#endif // SSBEHAVIOURTREESTATUS_HPP
