@@ -3,7 +3,7 @@
  *
  * @brief A root for any behaviour tree.
  *
- * @namespace ssutil
+ * @namespace ssutil::behaviourtree
  *
  * @author Sawyer Stanley (https://github.com/SawyersCoding)
  */

@@ -3,7 +3,7 @@
  *
  * @brief The status options which a behaviour tree can return.
  *
- * @namespace ssutil
+ * @namespace ssutil::behaviourtree
  *
  * @author Sawyer Stanley (https://github.com/SawyersCoding)
  */

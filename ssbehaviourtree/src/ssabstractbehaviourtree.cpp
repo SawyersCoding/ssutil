@@ -3,7 +3,7 @@
  *
  * @brief A base abstract class for all behaviour trees.
  *
- * @namespace ssutil
+ * @namespace ssutil::behaviourtree
  *
  * @author Sawyer Stanley (https://github.com/SawyersCoding)
  */
