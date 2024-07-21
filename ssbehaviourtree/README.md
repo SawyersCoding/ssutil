@@ -1,8 +1,21 @@
 # ssbehaviourtree
 
-I used this [site](https://www.gamedeveloper.com/programming/behavior-trees-for-ai-how-they-work) but made some tweaks.
+I used this [site](https://www.gamedeveloper.com/programming/behavior-trees-for-ai-how-they-work) for understanding behaviour trees.
 
-## Still to add
+## Available
+### composite
+- doallselector: selector but processes all subtrees.
+
+- selector: Returns SUCCESS upon finding a subtree that returns SUCCESS. 
+
+- sequence: Returns FAILUE upon finding a subtree that returns FAILURE.
+
+### decorator
+
+- root: An entry point for all behaviour trees.
+
+
+## Pending
 ### composite
 - doallsequence: sequence but processes all subtrees.
 
