@@ -6,6 +6,8 @@ I used this [site](https://www.gamedeveloper.com/programming/behavior-trees-for-
 ### composite
 - doallselector: selector but processes all subtrees.
 
+- doallsequence: sequence but processes all subtrees.
+
 - selector: Returns SUCCESS upon finding a subtree that returns SUCCESS. 
 
 - sequence: Returns FAILUE upon finding a subtree that returns FAILURE.
@@ -17,7 +19,6 @@ I used this [site](https://www.gamedeveloper.com/programming/behavior-trees-for-
 
 ## Pending
 ### composite
-- doallsequence: sequence but processes all subtrees.
 
 ### decorators
 - inverter: Swaps SUCCESS for FAILURE and vice vera.
