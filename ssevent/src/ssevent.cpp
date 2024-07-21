@@ -1,3 +1,15 @@
+/**
+ * @file ssevent.cpp
+ *
+ * @brief ssevent are used for invoking designated 
+ * functions when an event of interest occurs.
+ *
+ * @namespace ssutil
+ *
+ * @author Sawyer Stanley
+ * Contact: sawyerscoding@gmail.com
+ */
+
 #include "ssevent.hpp"
 
 ssutil::ssevent::ssevent() { }
