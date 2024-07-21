@@ -1,5 +1,5 @@
 /**
- * @file ssbehtreestatus.hpp
+ * @file ssbehaviourtreestatus.hpp
  *
  * @brief The status options which a behaviour tree can return.
  *
@@ -13,12 +13,12 @@
 
 namespace ssutil{
 
-    enum ssbehtreestatus{
+    enum ssbehaviourtreestatus{
         FAILURE = 0,
         SUCCESS = 1,
         RUNNING = 2
     };
-    
+
 }
 
 #endif // SSIBEHTREESTATUS_HPP
