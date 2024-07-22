@@ -14,6 +14,10 @@ I used this [site](https://www.gamedeveloper.com/programming/behavior-trees-for-
 
 ### decorator
 
+- inverter: Swaps SUCCESS for FAILURE and vice vera.
+
+- succeeder: Always returns SUCCESS.
+
 - root: An entry point for all behaviour trees.
 
 
@@ -21,7 +25,7 @@ I used this [site](https://www.gamedeveloper.com/programming/behavior-trees-for-
 ### composite
 
 ### decorators
-- inverter: Swaps SUCCESS for FAILURE and vice vera.
-- succeeder: Always returns SUCCESS.
+
 - repeater: Repeats processing the subtree.
+
 - untilfail: Repeats until a failure occurs.
