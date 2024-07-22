@@ -13,20 +13,13 @@
 
 #include <stdexcept>
 #include <string>
-#include "ssabstractbehaviourtree.hpp"
+#include "ssbehaviourtreedecorator.hpp"
 
 namespace ssutil::behaviourtree{
 
-    class root : public abstractbehaviourtree {
-        
-        public:
-            const int NCHILDREN_MAX = 1;
+    class root : public decorator {
 
         public:
-
-            /// @brief Appends a behaviour tree to the end this tree's children.
-            /// @param child The tree to append.
-            virtual void append_child(abstractbehaviourtree *child) override;
             
             /// @brief Processes this tree.
             /// @return The status of the subtree or SUCCESS if no subtree exists.
