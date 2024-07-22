@@ -1,5 +1,5 @@
 /**
- * @file ssbehaviourtreeselector.hpp
+ * @file ssbehaviourtreeselector.cpp
  *
  * @brief Processes all subtrees and returns SUCCESS if any
  * return SUCCESS.

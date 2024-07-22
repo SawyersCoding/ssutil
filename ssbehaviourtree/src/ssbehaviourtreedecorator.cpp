@@ -1,5 +1,5 @@
 /**
- * @file ssbehaviourtreedecorator.hpp
+ * @file ssbehaviourtreedecorator.cpp
  *
  * @brief A behaviour tree that is limited to having a single child.
  *

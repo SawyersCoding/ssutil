@@ -1,5 +1,5 @@
 /**
- * @file ssbehaviourtreeinverter.hpp
+ * @file ssbehaviourtreeinverter.cpp
  *
  * @brief A decorator that inverts the result of the child node. Thus,
  * SUCCESS become FAILURES and vice versa.
