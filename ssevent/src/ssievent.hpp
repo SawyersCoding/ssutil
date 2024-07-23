@@ -5,7 +5,7 @@
  * invoking designated functions when an event of interest
  * occurs.
  *
- * @namespace ssutil
+ * @namespace ssutil::event
  *
  * @author Sawyer Stanley (https://github.com/SawyersCoding)
  */
@@ -15,9 +15,9 @@
 
 #include <functional>
 
-namespace ssutil{
+namespace ssutil::event{
 
-    class ssievent{
+    class ievent{
 
         public:
 

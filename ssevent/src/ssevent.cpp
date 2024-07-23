@@ -4,38 +4,42 @@
  * @brief ssevent are used for invoking designated 
  * functions when an event of interest occurs.
  *
- * @namespace ssutil
+ * @namespace ssutil::event
  *
  * @author Sawyer Stanley (https://github.com/SawyersCoding)
  */
 
 #include "ssevent.hpp"
 
-ssutil::ssevent::ssevent() { }
+namespace ssutil::event{
 
-void ssutil::ssevent::add_callback(std::function<void(void *)> *callback)
-{
-    callbacks.emplace(callback);
-}
+	event::event() { }
 
-void ssutil::ssevent::notify()
-{
-    for(std::function<void(void *)> *callback : callbacks){
-        (*callback)(this);
-    }
-}
+	void event::add_callback(std::function<void(void *)> *callback)
+	{
+   		 callbacks.emplace(callback);
+	}
 
-void ssutil::ssevent::remove_callback(std::function<void(void *)> *callback)
-{
-    callbacks.erase(callback);
-}
+	void event::notify()
+	{
+   		 for(std::function<void(void *)> *callback : callbacks){
+   		     (*callback)(this);
+   		 }
+	}
 
-void ssutil::ssevent::operator+=(std::function<void(void *)> *callback)
-{
-    add_callback(callback);
-}
+	void event::remove_callback(std::function<void(void *)> *callback)
+	{
+   		 callbacks.erase(callback);
+	}
 
-void ssutil::ssevent::operator-=(std::function<void(void *)> *callback)
-{
-    remove_callback(callback);
+	void event::operator+=(std::function<void(void *)> *callback)
+	{
+   		 add_callback(callback);
+	}
+
+	void event::operator-=(std::function<void(void *)> *callback)
+	{
+   		 remove_callback(callback);
+	}
+
 }
