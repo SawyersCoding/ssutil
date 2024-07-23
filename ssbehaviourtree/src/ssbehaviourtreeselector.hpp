@@ -1,8 +1,8 @@
 /**
  * @file ssbehaviourtreeselector.hpp
  *
- * @brief Processes all subtrees and returns SUCCESS if any
- * return SUCCESS.
+ * @brief Processes subtrees until first occurance of SUCCESS.
+ * Returns FAILURE if no subtree returns SUCCESS.
  *
  * @namespace ssutil::behaviourtree
  *
