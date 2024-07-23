@@ -3,7 +3,7 @@ CC=g++
 
 EXAMPLE=example
 
-DEPS=ssbehaviourtreeroot.o ssbehaviourtreedoallselector.o ssabstractbehaviourtree.o ssbehaviourtreedecorator.o
+DEPS=ssbehaviourtreeroot.o ssbehaviourtreeselector.o ssbehaviourtreedoallselector.o ssabstractbehaviourtree.o ssbehaviourtreedecorator.o
 
 %.o: $(addprefix ../src/, %.cpp)
 	$(CC) -c -o $@ $^
