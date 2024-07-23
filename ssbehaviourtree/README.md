@@ -22,10 +22,4 @@ I used this [site](https://www.gamedeveloper.com/programming/behavior-trees-for-
 
 - root: An entry point for all behaviour trees.
 
-
-## Pending
-### composite
-
-### decorators
-
 - untilfail: Repeats until a failure occurs.
