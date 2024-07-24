@@ -4,7 +4,7 @@
  * @brief ssevent are used for invoking designated 
  * functions when an event of interest occurs.
  *
- * @namespace ssutil
+ * @namespace ssutil::event
  *
  * @author Sawyer Stanley (https://github.com/SawyersCoding)
  */
@@ -17,17 +17,17 @@
 #include <unordered_set>
 #include "ssievent.hpp"
 
-namespace ssutil{
+namespace ssutil::event{
 
-    class ssevent : public ssievent {
+    class event : public ievent {
 
         private:
 
             std::unordered_set<std::function<void(void *)> *> callbacks;
 
         public:
-            /// @brief Creates an ssevent.
-            ssevent();
+            /// @brief Creates an event.
+            event();
 
         public:
 

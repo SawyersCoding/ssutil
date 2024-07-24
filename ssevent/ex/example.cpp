@@ -33,9 +33,11 @@ namespace ssutil {
 
 }
 
+using namespace ssutil::event;
+
 int main(){
     std::function<void(void*)> greet, bye;
-    ssutil::ssevent on_greeting, on_goodbye, on_everything, on_nothing;
+    event on_greeting, on_goodbye, on_everything, on_nothing;
     ssutil::exclass example;
 
     // Define functions to be called when events occur
