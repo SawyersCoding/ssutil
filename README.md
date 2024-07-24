@@ -2,7 +2,7 @@
 
 Some C++ libraries to avoid reimplementing everything all of the time.
 
-An example of each tool can be found in the 'ex' directory.
+An example of each tool in-use can be found in the 'ex' directory.
 
 ## Objectives
 
